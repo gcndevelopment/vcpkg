@@ -63,4 +63,7 @@ configure_file(
 
 vcpkg_fixup_pkgconfig()
 file(INSTALL ${CMAKE_CURRENT_BINARY_DIR}/cmake/unofficial-glib-config.cmake DESTINATION ${CURRENT_PACKAGES_DIR}/share/unofficial-glib)
+file(INSTALL ${CMAKE_CURRENT_BINARY_DIR}/cmake/unofficial-glib-targets.cmake DESTINATION ${CURRENT_PACKAGES_DIR}/share/unofficial-glib)
+file(INSTALL ${CMAKE_CURRENT_BINARY_DIR}/cmake/unofficial-glib-targets-debug.cmake DESTINATION ${CURRENT_PACKAGES_DIR}/share/unofficial-glib)
+file(INSTALL ${CMAKE_CURRENT_BINARY_DIR}/cmake/unofficial-glib-targets-release.cmake DESTINATION ${CURRENT_PACKAGES_DIR}/share/unofficial-glib)
 file(INSTALL ${SOURCE_PATH}/COPYING DESTINATION ${CURRENT_PACKAGES_DIR}/share/${PORT} RENAME copyright)
